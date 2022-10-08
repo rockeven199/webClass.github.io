@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简介</title>
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/nav-frame.css">
+    <script type="text/javascript" src="./js/nav-frame.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2><a href="./index.html">WEB前端开发</a></h2>
+        </div>
+
+        <!-- 导航条 -->
+        <nav>
+            <div class="header">
+                <ul class="nav-part">
+                    <li value="11" class="nav-part-title animate__animated" onclick="navBar(this)">第一篇</li>
+                    <li class="nav-title-info animate__animated" onclick="navBar(this)"><a
+                            href="./section11.html">Web页面制作基础</a></li>
+                </ul>
+                <ul class="nav-part">
+                    <li value="22" class="nav-part-title animate__animated" onclick="navBar(this)">第二篇</li>
+                    <li class="nav-title-info animate__animated" onclick="navBar(this)"><a
+                            href="./section22.html">JavaScript程序设计</a></li>
+
+                </ul>
+                <ul class="nav-part">
+                    <li value="33" class="nav-part-title animate__animated" onclick="navBar(this)">第三篇</li>
+                    <li class="nav-title-info animate__animated" onclick="navBar(this)"><a
+                            href="./section33.html">HTML5和CSS3开发基础与应用</a></li>
+
+                </ul>
+                <ul class="nav-part">
+                    <li value="44" class="nav-part-title animate__animated" onclick="navBar(this)">第四篇</li>
+                    <li class="nav-title-info animate__animated" onclick="navBar(this)"><a
+                            href="./section44.html">轻量级框架应用</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intor">课程简介</div>
+
+    <article>
+        <section>
+            <div class="class-logo" onclick="classSelect(this)"><img src="./img/logo/html.png" alt=""></div>
+            <div class="class-info">
+                <h3>什么是HTML?</h3>
+                <p>HTML 是用来描述网页的一种语言。</p>
+                <p>HTML 指的是超文本标记语言: HyperText Markup Language</p>
+                <p>HTML 不是一种编程语言，而是一种标记语言</p>
+                <p>标记语言是一套标记标签 (markup tag)</p>
+                <p>HTML 使用标记标签来描述网页</p>
+                <p>HTML 文档包含了HTML 标签及文本内容</p>
+                <p>HTML文档也叫做 web 页面</p>
+            </div>
+        </section>
+        <section>
+            <div class="class-logo" onclick="classSelect(this)"><img src="./img/logo/css.png" alt="">
+            </div>
+            <div class="class-info">
+                <h3>什么是 CSS?</h3>
+                <P>CSS 指层叠样式表 (Cascading Style Sheets)</p>
+                <P>样式定义如何显示 HTML 元素</p>
+                <P>样式通常存储在样式表中</p>
+                <P>把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题</p>
+                <P>外部样式表可以极大提高工作效率</p>
+                <P>外部样式表通常存储在 CSS 文件中</p>
+                <P>多个样式定义可层叠为一个</p>
+            </div>
+        </section>
+        <section>
+            <div class="class-logo" onclick="classSelect(this)"><img src="./img/logo/js.png" alt=""></div>
+            <div class="class-info">
+                <h3>JavaScript 是什么？</h3>
+                <p> JavaScript 是一种轻量级的脚本编程语言。</p>
+                <p> JavaScript 是可插入 HTML 页面的编程代码。</p>
+                <p> JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。</p>
+                <p> JavaScript 很容易学习。</p>
+            </div>
+        </section>
+        <section>
+            <div class="class-logo" onclick="classSelect(this)"><img src="./img/logo/jq.png" alt=""></div>
+            <div class="class-info">
+                <h3>什么是 jQuery ？</h3>
+                <p>jQuery 是一个 JavaScript 函数库。</p>
+                <p>jQuery 是一个轻量级的"写的少，做的多"的 JavaScript 库。</p>
+                <p>jQuery 库包含以下功能：
+                    <p style="text-indent:20px;">HTML 元素选取</p>
+                    <p style="text-indent:20px;">HTML 元素操作</p>
+                    <p style="text-indent:20px;">CSS 操作</p>
+                    <p style="text-indent:20px;">HTML 事件函数</p>
+                    <p style="text-indent:20px;">JavaScript 特效和动画</p>
+                    <p style="text-indent:20px;">HTML DOM 遍历和修改</p>
+                    <p style="text-indent:20px;">AJAX</p>
+                    <p style="text-indent:20px;">Utilities</p>
+                </p>
+                <p>除此之外，jQuery 还提供了大量的插件。</p>
+            </div>
+        </section>
+        <section>
+            <div class="class-logo" onclick="classSelect(this)"><img src="./img/logo/web.png" alt=""></div>
+            <div class="class-info"></div>
+        </section>
+        <section>
+            <div class="class-logo" onclick="classSelect(this)"><img src="./img/logo/code.jpg" alt=""></div>
+            <div class="class-info"></div>
+        </section>
+    </article>
+</body>
+<script>
+    function classSelect(data) {
+        data.firstElementChild.style.cssText = "transform:scale(35%);"
+        data.style.height = "30%";
+        data.nextElementSibling.style.cssText = "height: 66%;width: 94%;background-color: white;transition: all 0.5s;"
+    }
+</script>
+
+</html>
