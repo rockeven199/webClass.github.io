@@ -317,7 +317,8 @@ window.onload = function () {
 
 // 欢迎页面
 function Welcome() {
-    //显示开始页面，考虑到某些设备性能问题就注释掉了    $("#add").append("<iframe frameborder='0' id='iframe' src='./welcome.html' ></iframe>");
+    //显示开始页面，考虑到某些设备性能问题就注释掉了    
+    $("#add").append("<iframe frameborder='0' id='iframe' src='./welcome.html' ></iframe>");
     let jqversion = $.fn.jquery;
     console.log("\nWelcome to use it ！！！\n\nJquery Version:\n" + jqversion)
 };
